@@ -1,3 +1,5 @@
 # cleaning trash folders
 .vscode/ 
 venv/
+
+*.pyc

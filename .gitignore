@@ -1,0 +1,3 @@
+# cleaning trash folders
+.vscode/ 
+venv/

@@ -12,6 +12,25 @@ class CalculatorA(object):
         self._check_type(b)
         return a * b
 
+
+    def div(self, a: int, b: int) -> int:
+        self._check_type(a)
+        self._check_type(b)
+        return a / b
+
+    
+    def sub(self, a: int, b: int) -> int:
+        self._check_type(a)
+        self._check_type(b)
+        return a - b
+
+    def pot(self, a: int, b: int) -> int:
+        self._check_type(a)
+        self._check_type(b)
+        for _ in range(b - 1):
+            a = a * a
+        return a
+
     def _check_type(self, opt) -> None:
         if not isinstance(opt, numbers.Number):
             raise CalculatorError(f'{opt} não é um número')

@@ -27,8 +27,9 @@ class CalculatorA(object):
     def pot(self, a: int, b: int) -> int:
         self._check_type(a)
         self._check_type(b)
+        temp = a
         for _ in range(b - 1):
-            a = a * a
+            a = a * temp
         return a
 
     def _check_type(self, opt) -> None:

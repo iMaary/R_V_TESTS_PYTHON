@@ -1,5 +1,5 @@
-# Created by dantas at 31/05/2022
-Feature: CalculadoraA
+# Created by dantas at 02/06/2022
+Feature: Calculadora
   # Enter feature description here
 
   Scenario Outline: somar dois números

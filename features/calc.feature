@@ -41,6 +41,19 @@ Feature: CalculadoraA
     |9    |2    |18       |
     |-2    |5    |-10        |
 
+      Scenario Outline: dividir dois números
+    operação de divisão de dois números
+
+    Given o operador 1 é <op1>
+    And o operador 2 é <op2>
+    When eu subtraio os operadores
+    Then o resultado deve ser <resultado>
+    Examples:
+    |op1  |op2  |resultado|
+    |10    |2    |5       |
+    |200    |20    |10       |
+    |1    |1    |1        |
+
       Scenario Outline: potencia de dois números
     operação de potenciação de dois números
 

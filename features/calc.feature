@@ -27,3 +27,29 @@ Feature: CalculadoraA
     |2    |4    |-2       |
     |3    |7    |-4       |
     |8    |6    |2        |
+
+      Scenario Outline: multiplicar dois números
+    operação de multiplicação de dois números
+
+    Given o operador 1 é <op1>
+    And o operador 2 é <op2>
+    When eu subtraio os operadores
+    Then o resultado deve ser <resultado>
+    Examples:
+    |op1  |op2  |resultado|
+    |5    |5    |25       |
+    |9    |2    |18       |
+    |-2    |5    |-10        |
+
+      Scenario Outline: potencia de dois números
+    operação de potenciação de dois números
+
+    Given o operador 1 é <op1>
+    And o operador 2 é <op2>
+    When eu subtraio os operadores
+    Then o resultado deve ser <resultado>
+    Examples:
+    |op1  |op2  |resultado|
+    |2    |4    |16       |
+    |5    |3    |125       |
+    |10    |3    |1000        |

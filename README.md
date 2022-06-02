@@ -9,6 +9,19 @@ class. How so, we used also many libraries likes pytest, behave and unittest.
 ```
 git clone https://github.com/iMaary/R_V_TESTS_PYTHON.git python_tests && cd python_tests
 ```
+##### Creating virtual enviroment (venv) - Python
+```
+python -m venv venv
+```
+###### Acitivate virtual enviroment (venv) - Windows
+```
+\venv\Scripts\activate
+```
+###### Acitivate virtual enviroment (venv) - Linux/MacOS
+```
+source venv/bin/activate
+```
+
 ##### Installing dependencies
 ```
 pip install -r requirements.txt

@@ -1,4 +1,4 @@
-# Created by danta at 31/05/2022
+# Created by dantas at 31/05/2022
 Feature: CalculadoraA
   # Enter feature description here
 
@@ -28,41 +28,41 @@ Feature: CalculadoraA
     |3    |7    |-4       |
     |8    |6    |2        |
 
-      Scenario Outline: multiplicar dois números
-    operação de multiplicação de dois números
+    Scenario Outline: multiplicar dois números
+      operação de multiplicação de dois números
 
     Given o operador 1 é <op1>
     And o operador 2 é <op2>
-    When eu subtraio os operadores
+    When eu multiplico os operadores
     Then o resultado deve ser <resultado>
     Examples:
     |op1  |op2  |resultado|
     |5    |5    |25       |
     |9    |2    |18       |
-    |-2    |5    |-10        |
+    |-2    |5   |-10      |
 
-      Scenario Outline: dividir dois números
-    operação de divisão de dois números
+    Scenario Outline: dividir dois números
+      operação de divisão de dois números
 
     Given o operador 1 é <op1>
     And o operador 2 é <op2>
-    When eu subtraio os operadores
+    When eu divido os operadores
     Then o resultado deve ser <resultado>
     Examples:
     |op1  |op2  |resultado|
-    |10    |2    |5       |
-    |200    |20    |10       |
+    |10   |2    |5        |
+    |200  |20   |10       |
     |1    |1    |1        |
 
-      Scenario Outline: potencia de dois números
-    operação de potenciação de dois números
+    Scenario Outline: potencia de dois números
+      operação de potenciação de dois números
 
     Given o operador 1 é <op1>
     And o operador 2 é <op2>
-    When eu subtraio os operadores
+    When eu elevo um operador pelo outro
     Then o resultado deve ser <resultado>
     Examples:
     |op1  |op2  |resultado|
     |2    |4    |16       |
-    |5    |3    |125       |
-    |10    |3    |1000        |
+    |5    |3    |125      |
+    |10   |3    |1000     |

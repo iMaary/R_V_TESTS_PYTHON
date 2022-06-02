@@ -1,7 +1,7 @@
 import numbers
 
 
-class CalculatorA(object):
+class Calculator(object):
     def sum(self, a: int, b: int) -> int:
         self._check_type(a)
         self._check_type(b)
@@ -12,13 +12,11 @@ class CalculatorA(object):
         self._check_type(b)
         return a * b
 
-
-    def div(self, a: int, b: int) -> int:
+    def div(self, a: int, b: int) -> float:
         self._check_type(a)
         self._check_type(b)
         return a / b
 
-    
     def sub(self, a: int, b: int) -> int:
         self._check_type(a)
         self._check_type(b)
@@ -40,11 +38,6 @@ class CalculatorA(object):
 class CalculatorError(Exception):
     def __init__(self, error_msg: str):
         pass
-
-
-class CalculatorB:
-    def soma(x, y) -> float:
-        return x + y
 
 
 if __name__ == "__main__":
